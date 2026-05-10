@@ -1,6 +1,14 @@
-# Phishing URL Detection Using RandomForest 
+# Phishing URL Detection Using RandomForest
+
+## Jasmeet Singh(2210990449)
+## Tamanna(2210990885)
+## Tanishpreet Kaur(2210990895)
+## Ronit Sachdeva(2210992184)
+
+## Research Paper - Robust Phishing Detection against Adversarial Evasion Attacks Using Random Forest Models
 
 ## Overview
+
 This project aims to detect phishing URLs using a RandomForest classifier. The process involves two main steps: feature extraction from URLs and prediction using a custom trained RandomForest model.
 
 ### Feature Extraction
@@ -8,6 +16,7 @@ This project aims to detect phishing URLs using a RandomForest classifier. The p
 When a URL is input into the system, it undergoes a comprehensive feature extraction process. This process analyzes various characteristics of the URL and its associated website to create a feature vector.
 
 The URL features extracted include:
+
 - URL having IP: Checks if the URL contains an IP address instead of a domain name.
 - URL length: Length of the URL string.
 - URL shortening: Checks if the URL is shortened using services like Bit.ly or TinyURL.
@@ -36,7 +45,6 @@ The URL features extracted include:
 - Links pointing to page: Number of external links pointing to the webpage.
 - Statistical features: Various statistical features extracted from the URL.
 
-
 Each of these features is quantified and combined into a single feature vector that represents the URL.
 
 ### Prediction Using RandomForest
@@ -49,6 +57,7 @@ Once the feature vector is created, it's passed to the pre-trained RandomForest 
 4. Output: The model outputs a binary classification - either "Phishing" or "Legitimate" - along with a confidence score.
 
 RandomForest is particularly effective for this task because:
+
 - It can handle the high-dimensional feature space of URL characteristics.
 - It's robust against overfitting, a common problem in phishing detection due to the constantly evolving nature of attacks.
 - It can provide feature importance rankings, helping identify which URL characteristics are most indicative of phishing attempts.
@@ -56,45 +65,56 @@ RandomForest is particularly effective for this task because:
 By combining thorough feature extraction with the powerful RandomForest algorithm, this project aims to provide accurate and reliable phishing URL detection, helping to enhance online security for users.
 
 ### Model Performance
+
 We achieved an accuracy of **97.31%** in detecting phishing URLs using our RandomForest classifier. This high accuracy demonstrates the effectiveness of our approach in distinguishing between legitimate and phishing websites.
 
 ## Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/phishing-url-detection.git
    cd phishing-url-detection
+   ```
 2. Install the required Python packages:
-    ```bash
-    pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ## Usage
 
 ### Python Script
+
 1. To run a Python script from your command prompt or terminal, use the following format:
-    ```bash
-    python main.py/python3 main.py
+   ```bash
+   python main.py/python3 main.py
+   ```
 2. When prompted, enter the URL you want to check.
 
 The script will output whether the URL is classified as phishing or legitimate.
 
 ### React Web Application
+
 1. Navigate to the React app directory:
-    ```bash
-    cd frontend
+   ```bash
+   cd frontend
+   ```
 2. Install dependencies:
-    ```bash
-    npm install
+   ```bash
+   npm install
+   ```
 3. Start the application:
-    ```bash
-    npm start
+   ```bash
+   npm start
+   ```
 4. Open your web browser and go to http://localhost:3000.
 5. Enter a URL in the input field and click the "Check" or "Predict" button.
 6. The application will display whether the URL is classified as "Phishy URL" or "Legitimate URL".
 7. To stop the React application, press Ctrl + C in the terminal where it's running.
 
 ## RandomForest Classifier
+
 RandomForest is a robust ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes (for classification) or mean prediction (for regression) of the individual trees. It excels in handling large datasets with high dimensionality and provides insights into feature importance.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-
