@@ -1,11 +1,11 @@
 # Phishing URL Detection Using RandomForest
 
-## Jasmeet Singh(2210990449)
-## Tamanna(2210990885)
-## Tanishpreet Kaur(2210990895)
-## Ronit Sachdeva(2210992184)
+Jasmeet Singh(2210990449)
+Tamanna(2210990885)
+Tanishpreet Kaur(2210990895)
+Ronit Sachdeva(2210992184)
 
-## Research Paper - Robust Phishing Detection against Adversarial Evasion Attacks Using Random Forest Models
+Research Paper - Robust Phishing Detection against Adversarial Evasion Attacks Using Random Forest Models
 
 ## Overview
 
